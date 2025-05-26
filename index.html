@@ -7,27 +7,35 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-  <div class="header-left">
-    <div class="logo">🚗 TAVO</div>
-    <div class="slogan">국내 렌트카 비교 예약 서비스</div>
-  </div>
-  <div class="nav">
-    <a href="#">로그인</a>
-    <a href="#">내 예약</a>
-  </div>
-</header>
-  <div class="container">
-    <header class="search-bar">
-      <h1>TAVO 렌트카 검색</h1>
-      <div class="search-form">
-        <input type="text" placeholder="차량명 또는 지역 검색" />
-        <input type="date" />
-        <input type="date" />
-        <button>검색</button>
-      </div>
-    </header>
 
+  <!-- 카모아 스타일 헤더 -->
+  <header class="top-bar">
+    <div class="top-left">
+      <div class="logo">TAVO</div>
+      <nav class="menu">
+        <a href="#">단기렌트</a>
+        <a href="#">해외렌트</a>
+        <a href="#">월렌트</a>
+        <a href="#">패밀리 혜택</a>
+      </nav>
+    </div>
+    <div class="top-right">
+      <span>친절상담 <strong>1544-0000</strong></span>
+      <a href="#">마이페이지</a>
+      <button class="login-btn">로그인</button>
+    </div>
+  </header>
+
+  <!-- 검색바 -->
+  <section class="search-bar">
+    <input type="text" placeholder="📍 제주국제공항" />
+    <input type="text" placeholder="🕒 05.26 (월) 17:30" />
+    <input type="text" placeholder="🕒 05.27 (화) 17:30" />
+    <button class="search-btn">최저가 차량 검색</button>
+  </section>
+
+  <!-- 차량 리스트 -->
+  <div class="container">
     <section class="car-list">
       <div class="car-item">
         <div class="car-image">
@@ -52,10 +60,9 @@
           <p class="price">₩52,000 / 1일</p>
         </div>
       </div>
-
-      <!-- 더 많은 차량을 이 형식으로 추가 가능 -->
     </section>
 
+    <!-- 하단 광고 -->
     <footer>
       <div class="ad-banner">
         <a href="https://www.instagram.com/dokkaebi_code/" target="_blank">
@@ -66,4 +73,3 @@
   </div>
 </body>
 </html>
-
