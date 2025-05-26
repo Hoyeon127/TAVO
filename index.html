@@ -3,50 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TAVO 렌트카</title>
+  <title>TAVO 렌트카 리스트</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>TAVO 렌트카</h1>
-      <p>당신의 여행, 더 편하게. 제주도부터 전국까지!</p>
+    <header class="search-bar">
+      <h1>TAVO 렌트카 검색</h1>
+      <div class="search-form">
+        <input type="text" placeholder="차량명 또는 지역 검색" />
+        <input type="date" />
+        <input type="date" />
+        <button>검색</button>
+      </div>
     </header>
 
     <section class="car-list">
-      <h2>🚗 추천 차량</h2>
-
       <div class="car-item">
-        <h3>기아 레이</h3>
-        <p>경차 · 자동 · 5도어 · 4인승</p>
-        <p class="price">₩45,000 / 1일</p>
+        <div class="car-image">
+          <img src="https://via.placeholder.com/120x80" alt="차량 이미지" />
+        </div>
+        <div class="car-info">
+          <h2>현대 아반떼 CN7</h2>
+          <p>🚗 연료: 휘발유 | 🚘 옵션: 내비게이션, 후방카메라</p>
+          <p>📍 제주공항 인근 픽업 가능</p>
+          <p class="price">₩45,000 / 1일</p>
+        </div>
       </div>
 
       <div class="car-item">
-        <h3>현대 아반떼</h3>
-        <p>준중형 · 자동 · 스마트 크루즈 포함</p>
-        <p class="price">₩60,000 / 1일</p>
+        <div class="car-image">
+          <img src="https://via.placeholder.com/120x80" alt="차량 이미지" />
+        </div>
+        <div class="car-info">
+          <h2>기아 K5</h2>
+          <p>🚗 연료: LPG | 🚘 옵션: 블랙박스, 스마트키</p>
+          <p>📍 서귀포 시내 인근</p>
+          <p class="price">₩52,000 / 1일</p>
+        </div>
       </div>
 
-      <div class="car-item">
-        <h3>쏘렌토 디젤</h3>
-        <p>SUV · 7인승 · 자동 · 트렁크 넓음</p>
-        <p class="price">₩90,000 / 1일</p>
-      </div>
-
-      <!-- 더 많은 차량 항목을 여기에 추가 가능 -->
+      <!-- 더 많은 차량을 이 형식으로 추가 가능 -->
     </section>
 
-    <!-- 광고 배너 -->
-    <div class="ad-banner" style="margin-top: 40px; text-align: center;">
-      <a href="https://www.instagram.com/dokkaebi_code/" target="_blank" rel="noopener noreferrer">
-        <img src="banner.jpg" alt="코비랑 국내여행 갈래?" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
-      </a>
-    </div>
-
     <footer>
-      <p>© 2025 TAVO | 문의: tavo@rentcar.kr</p>
+      <div class="ad-banner">
+        <a href="https://www.instagram.com/dokkaebi_code/" target="_blank">
+          <img src="/banner.jpg" alt="코비랑 국내여행 갈래?" />
+        </a>
+      </div>
     </footer>
   </div>
 </body>
 </html>
+
