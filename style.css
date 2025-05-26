@@ -186,33 +186,45 @@ h1 {
 
 .site-header {
   width: 100%;
-  background: white;
-  border-bottom: 1px solid #eee;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 32px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
   position: sticky;
   top: 0;
   z-index: 999;
 }
 
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo {
-  font-size: 1.4em;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #007aff;
-  letter-spacing: -0.5px;
+}
+
+.slogan {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 2px;
 }
 
 .nav a {
-  margin-left: 16px;
+  margin-left: 20px;
   text-decoration: none;
-  color: #555;
   font-weight: 500;
+  color: #333;
+  font-size: 0.95rem;
 }
 
 .nav a:hover {
   color: #007aff;
 }
+
 
