@@ -1,230 +1,165 @@
-/* 기본 설정 */
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-/* 제목 */
-h1 {
-    font-size: 2rem;
-    color: #222;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-/* 검색 입력 영역 */
-.search-box {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-}
-
-.search-box input,
-.search-box select,
-.search-box button {
-    padding: 12px 16px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-}
-
-.search-box button {
-    background-color: #2b6cb0;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.search-box button:hover {
-    background-color: #1a4e8a;
-}
-
-/* 차량 카드 리스트 */
-.car-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.car-card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    padding: 20px;
-    transition: transform 0.2s;
-}
-
-.car-card:hover {
-    transform: translateY(-4px);
-}
-
-.car-card h3 {
-    margin-top: 0;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #222;
-}
-
-.car-card p {
-    margin: 6px 0;
-    color: #555;
-}
-
-/* 배너 광고 */
-.banner {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.banner img {
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.container {
-  max-width: 960px;
-  margin: auto;
-  padding: 20px;
   font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
-.search-bar {
-  margin-bottom: 30px;
-  padding: 20px;
-  border-bottom: 2px solid #eee;
-}
-
-.search-bar h1 {
-  margin-bottom: 10px;
-  font-size: 1.5em;
-}
-
-.search-form {
+/* 상단 헤더 */
+.top-bar {
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.search-form input[type="text"],
-.search-form input[type="date"] {
-  padding: 8px;
-  font-size: 1em;
-  flex: 1;
+.top-left {
+  display: flex;
+  align-items: center;
 }
 
-.search-form button {
-  padding: 8px 16px;
-  background-color: #007bff;
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #2a4ded;
+  margin-right: 24px;
+}
+
+.menu a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #444;
+  font-size: 0.95em;
+}
+
+.menu a:hover {
+  color: #2a4ded;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.login-btn {
+  background-color: #eee;
   border: none;
-  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
 }
 
+.login-btn:hover {
+  background-color: #ddd;
+}
+
+/* 검색바 */
+.search-bar {
+  background-color: #fff;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 180px;
+  font-size: 0.95em;
+}
+
+.search-btn {
+  background-color: #2a4ded;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #1f3dc9;
+}
+
+/* 전체 컨테이너 */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* 차량 리스트 */
 .car-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+/* 차량 항목 */
 .car-item {
-  display: flex;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: #fff;
   border-radius: 10px;
-  padding: 15px;
+  display: flex;
   align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 16px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .car-image img {
   width: 120px;
   height: 80px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 8px;
   margin-right: 20px;
 }
 
 .car-info h2 {
-  margin: 0 0 6px;
-  font-size: 1.2em;
+  margin-bottom: 6px;
+  font-size: 1.1em;
+  color: #111;
 }
 
 .car-info p {
-  margin: 4px 0;
+  font-size: 0.9em;
   color: #555;
 }
 
 .car-info .price {
-  margin-top: 8px;
+  margin-top: 6px;
+  font-size: 1em;
   font-weight: bold;
-  color: #e91e63;
+  color: #2a4ded;
 }
 
-.ad-banner {
-  margin-top: 50px;
+/* 하단 배너 */
+footer {
+  margin-top: 60px;
   text-align: center;
 }
 
 .ad-banner img {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.site-header {
   width: 100%;
-  background: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 32px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-.header-left {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #007aff;
-}
-
-.slogan {
-  font-size: 0.85rem;
-  color: #777;
-  margin-top: 2px;
-}
-
-.nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  color: #333;
-  font-size: 0.95rem;
-}
-
-.nav a:hover {
-  color: #007aff;
-}
-
-
