@@ -92,3 +92,94 @@ h1 {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.search-bar {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.search-bar h1 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-form input[type="text"],
+.search-form input[type="date"] {
+  padding: 8px;
+  font-size: 1em;
+  flex: 1;
+}
+
+.search-form button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.car-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.car-item {
+  display: flex;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.car-image img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.car-info h2 {
+  margin: 0 0 6px;
+  font-size: 1.2em;
+}
+
+.car-info p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.car-info .price {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+.ad-banner {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.ad-banner img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
